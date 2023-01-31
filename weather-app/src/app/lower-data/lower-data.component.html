@@ -1,0 +1,39 @@
+<p class="more">Mais informações</p>
+<div class="info" *ngIf="weatherData">
+  <div class="info-container">
+    <div class="info-block">
+      <img src="../../assets/imgs/clear_night_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+      <span>mínima</span>
+    </div>
+    <div class="info-block-value">
+      {{ (weatherData.main.temp_min - 32) * (5/9) }}
+    </div>
+  </div>
+  <div class="info-container">
+    <div class="info-block">
+      <img src="../../assets/imgs/clear_day_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+      <span>máxima</span>
+    </div>
+    <div class="info-block-value">
+      {{ (weatherData.main.temp_max - 32) * (5/9) }}
+    </div>
+  </div>
+  <div class="info-container">
+    <div class="info-block">
+      <img src="../../assets/imgs/humidity_percentage_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+      <span>umidade</span>
+    </div>
+    <div class="info-block-value">
+      {{ weatherData.main.humidity }}
+    </div>
+  </div>
+  <div class="info-container">
+    <div class="info-block">
+      <img src="../../assets/imgs/clear_night_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+      <span>ventos</span>
+    </div>
+    <div class="info-block-value">
+      {{ weatherData.wind.speed }}
+    </div>
+  </div>
+</div>

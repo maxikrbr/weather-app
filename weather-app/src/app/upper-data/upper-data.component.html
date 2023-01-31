@@ -1,0 +1,8 @@
+<div class="upper-data" *ngIf="weatherData">
+  <img src="../../assets/imgs/hot-weather.png" alt="" *ngIf="(weatherData.main.temp - 32) * (5/9) > 15">
+  <img src="../../assets/imgs/cold_8185920.png" alt="" *ngIf="(weatherData.main.temp - 32) * (5/9) <= 15">
+  <div class="weather-data">
+    <div class="location"> {{ weatherData.name }}</div>
+    <div class="temperature"> {{ (weatherData.main.temp - 32) * (5/9) | number: '1.0-0'}}°C </div>
+  </div>
+</div>

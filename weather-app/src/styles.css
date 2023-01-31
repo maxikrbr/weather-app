@@ -1,0 +1,31 @@
+:root {
+  --blue1: #323992;
+  --blue2: #535ac1;
+  --yellow1: #FAC742;
+  --white: #fff;
+  --grey1: #EDEDED;
+  --shadow1: rgba(0, 0, 0, 0.2);
+  --shadow2: rgba(255, 255, 255, 0.1)
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--blue1);
+}
+
+.container {
+  width: 400px;
+  height: 80vh;
+  background-color: var(--blue2);
+  border-radius: 16px;
+  box-shadow: 8px 8px 8px var(--shadow1);
+}
